@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/daniel/Desktop/learn/DeepLearning-master/venv"
+VIRTUAL_ENV="/Users/danielchuang/Desktop/Github&learn/DeepLearning/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

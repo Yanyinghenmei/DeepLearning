@@ -1,4 +1,4 @@
-#!/Users/daniel/Desktop/learn/DeepLearning-master/venv/bin/python
+#!/Users/danielchuang/Desktop/Github&learn/DeepLearning/venv/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==10.0.1','console_scripts','pip'
 __requires__ = 'pip==10.0.1'
 import re
