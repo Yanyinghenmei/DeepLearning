@@ -8,6 +8,7 @@ sys.path.append(os.pardir)
 import numpy as np
 from dataset.mnist import load_mnist
 from learn02.two_layer_net import TwoLayerNet
+from common.optimizer import *
 
 # 读入数据
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
@@ -34,7 +35,10 @@ for i in range(iters_num):
 
     # 更新
     for key in ('W1', 'b1', 'W2', 'b2'):
-        network.params[key] -= learning_tate * grad[key]
+        # optimizer = SGD(lr=0.01)
+        # optimizer.update(network.params, grad)
+        optimizer = Adam()
+        optimizer.update(network.params, grad)
 
     loss = network.loss(x_batch, t_batch)
     train_loss_list.append(loss)
