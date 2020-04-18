@@ -9,4 +9,3 @@ dist
 insta_args.txt
 .idea
 README.rst
-*.sh
